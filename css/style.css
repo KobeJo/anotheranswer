@@ -119,6 +119,7 @@ footer {
 
 .home-section-background {
     position: relative;
+	min-height: 300px;
     max-height: 600px;
 	width: 100%;
     background: #fff;
@@ -261,14 +262,15 @@ footer {
 .photo-grid {
 	width: 100%;
 	margin-top: 20px;
+	text-align: center;
+	background-color: #f2f2f2;
 }
 
 .photo-grid li {
 	border: 5px solid white;
 	display: inline-block;
-	margin-left: 160px;
-	width: 400px;
-	text-align: center;
+	margin-left: 50px;
+	width: 310px;
 }
 
 .photo-grid li:hover img {
@@ -287,11 +289,11 @@ footer {
 }
 
 .photo-grid figure {
-	height: 450px;
+	height: 300px;
 	overflow: hidden;
 	position: relative;
 	margin-right: 50px;
-	width: 450px;
+	width: 300px;
 }
 
 .photo-grid figcaption {
