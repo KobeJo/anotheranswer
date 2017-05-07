@@ -5,7 +5,12 @@ body {
     letter-spacing: 1px;
     height: 80%;
     font-family: 'Poppins', sans-serif;
+	min-width: 1024px;
 	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
 }
 
 html{
@@ -30,6 +35,11 @@ h1, h2 {
 
 a {
     text-decoration: none;
+}
+
+div {
+	margin-left:auto;
+	margin-right:auto;
 }
 
 img {
@@ -76,10 +86,12 @@ button {
 	text-transform: uppercase;
 	display: block;
 	border: none;
+	margin-right: 30px;
 }
 
 header {
 	width: 100%;
+	min-width: 1024px;
 }
 
 footer {
@@ -106,24 +118,30 @@ footer {
     padding: 0
 }
 
+.container {
+	width: 100%;
+	min-width: 1024px;
+}
+
 .bg-cover {
 	background-repeat: no-repeat;
 }
 
 .home-section {
-    height: 88%;
+    height: 85%;
 	width: 100%;
+	min-width: 1024px;
 }
 
 .header-top-area {
     position: fixed;
-    left: 0px;
-	right: 0px;
     top: 0;
+	left: 0;
     width: 100%;
     z-index: 1;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+	min-width: 1024px;
 }
 
 .navbar-brand {
@@ -135,6 +153,7 @@ footer {
 .navbar-brand a {
 	display:block;
 	color: #000;
+	margin-left: 30px;
 	text-transform: uppercase;
 	letter-spacing: 6px;
 	font-weight: 900;
@@ -228,6 +247,7 @@ footer {
 	margin-top : 120px;
 	padding-bottom: 0px;
     z-index: -2;
+	min-width: 1024px;
 }
 
 .project-section-background {
@@ -268,7 +288,7 @@ footer {
   list-style: none;
   padding-left: 0;
   margin-left: 425px;
-  text-align: center;
+  text-align: center top;
 }
 
 .social-icon:before, .social-icon:after {
@@ -282,19 +302,19 @@ footer {
 
 .social-icon li {
   display: inline-block;
-  margin: -8px 10px;
+  margin: 0px 15px;
 }
 
 .social-icon li a {
   display: block;
-  width: 39px;
-  height: 39px;
-  line-height: 40px;
+  width: 30px;
+  height: 30px;
+  line-height: 33px;
   color: #fff;
   text-align: center top;
   border: 0 none;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 14px;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   transition: all 0.3s ease-in-out;
 }
@@ -320,7 +340,7 @@ footer {
     padding: 0px 0px;
     color: #f8f8f8;
 	color: #000;
-	margin-top: 50px;
+	margin-top: 150px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
