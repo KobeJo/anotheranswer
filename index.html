@@ -10,11 +10,15 @@
 		<meta name="author" content="Daesik Cho"/>
 		<meta name="url" content="https://anotheranswer.github.io/index.html"/>
 		<meta name="copyright" content="다른답:Creative Lab 2017"/>
-		<meta name="robots" content="index,follow"/>
 		<title>다른답 : Creative Lab</title>
 		<link rel="stylesheet" type="text/css" href="css/plugin.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700"/>
+		<style>
+			.container { width: 100%; margin: 0; }
+			.container .ism-slider { margin-left: 0; margin-right: 0; }
+		</style>
+		<script src="js/ism-2.2.min.js"></script>
 	</head>
 	
 	<body>
@@ -30,25 +34,16 @@
 								<div class="navbar">
 									<div class="navbar-collapse collapse">
 										<ul class="nav navbar-nav navbar-right">
-											<!--<li><a class="smoth-scroll" href="index.html">Home<div class="ripple-wrapper"></div></a></li>-->
 											<div class="dropdown">
 												<a href="index.html"><button class="dropbtn">Home</button></a>
 												
 											</div>
-											<!--<li><a class="smoth-scroll" href="about.html">About</a></li>-->
+											<!--
+											이 부분은 나중에 다시 추가
 											<div class="dropdown" style="margin-left: 42px">
 												<a href="about.html"><button class="dropbtn">About</button></a>
 											</div>
-											<!--<li class="dropdown">
-												<span>
-													<a class="dropdown-toggle" data-toggle="dropdown" href="#">Project
-														<span class="caret"></span>	
-													</a>
-												</span>
-												<ul class="dropdown-menu">
-													<li class="dropdown-content"><a href="project_detail.html">컬러링 연세</a></li>
-												</ul>
-											</li>-->
+											-->
 											<div class="dropdown" style="margin-left: 40px">
 												<a href="project.html"><button class="dropbtn">Project<span class="caret"></span></button></a>
 												<div class="dropdown-content">
@@ -64,7 +59,20 @@
 				</div>
 			</div>
 			
-			<div class="home-section-background">
+			<div class='container'>
+
+			<div class="ism-slider" id="my-slider">
+			  <ol>
+				<li>
+				  <img src="images/mainbg2.jpg">
+				</li>
+				<li>
+				  <img src="images/mainbg1.jpg">
+				</li>
+			  </ol>
+			</div>
+			
+			<!--<div class="home-section-background">
 				<div class="container">
 				<div class="display table">
 					<div class="row">
@@ -72,7 +80,7 @@
 					</div>
 				</div>
 				</div>
-			</div>
+			</div>-->	
 		</header>
 		
 		<footer class="footer-section">
