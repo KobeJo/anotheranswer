@@ -98,22 +98,6 @@ footer {
 	width: 100%;
 }
 
-.hanna {
-	font-family: 'Hanna', sans-serif;
-}
-
-.shadow-one {
-	text-shadow: 0 0 10px #e27312;
-}
-
-.shadow-two {
-	text-shadow: 0 0 10px #0000FF;
-}
-
-.shadow-three {
-	text-shadow: 0 0 10px #3ca387;
-}
-
 .no-padding {
     padding: 0
 }
@@ -133,6 +117,21 @@ footer {
 	min-width: 1024px;
 }
 
+.home-section-background {
+    position: relative;
+    max-height: 600px;
+	width: 100%;
+    background: #fff;
+    background-size: cover;
+	margin-top: 120px;
+	padding-bottom: 0px;
+	min-width: 1024px;
+}
+
+.home-section-background h1{
+	font-size: 100px;
+}
+
 .header-top-area {
     position: fixed;
     top: 0;
@@ -144,10 +143,19 @@ footer {
 	min-width: 1024px;
 }
 
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: #ffffff;
+}
+
 .navbar-brand {
 	padding-top: 7px;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
+	position: fixed;
+	z-index: 3;
 }
 
 .navbar-brand a {
@@ -163,7 +171,6 @@ footer {
 .navbar-default {
 	background:#fff;
 	border: none;
-	opacity: 0.7;
 	padding-top: 40px;
 	padding-bottom: -30px;
 	display: block;
@@ -197,6 +204,19 @@ footer {
     color: #000;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+	display: block;
+}
+
+.nav li a:focus, .nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	display: block;
+}
+
+.navigation-background .navigation-menu .navbar-nav li a:hover {
+    color: #fff;
 	display: block;
 }
 
@@ -238,30 +258,17 @@ footer {
 	background-color: #ffffff;
 }
 
-.home-section-background {
-    position: relative;
-    height: 100%;
-	width: 100%;
-    background: #fff;
-    background-size: cover;
-	margin-top : 120px;
-	padding-bottom: 0px;
-    z-index: 555;
-	min-width: 1024px;
-}
-
 .photo-grid {
-	margin: 1em auto;
-	max-width: 1106px;
-	text-align: center;
-	margin-top: 30px;
+	width: 100%;
+	margin-top: 20px;
 }
 
 .photo-grid li {
 	border: 5px solid white;
 	display: inline-block;
-	margin: 1em;
-	width: 310px;
+	margin-left: 160px;
+	width: 400px;
+	text-align: center;
 }
 
 .photo-grid li:hover img {
@@ -280,15 +287,17 @@ footer {
 }
 
 .photo-grid figure {
-	height: 310px;
+	height: 450px;
 	overflow: hidden;
 	position: relative;
-	width: 310px;
+	margin-right: 50px;
+	width: 450px;
 }
 
 .photo-grid figcaption {
 	background: rgba(0,0,0,0.8);
 	color: white;
+	font-size: 15px;
 	display: table;
 	height: 100%;
 	left: 0;
@@ -296,21 +305,22 @@ footer {
 	position: absolute;
 	right: 0;
 	top: 0;
+	vertical-align: center;
 	-webkit-transition: all 300ms;
 	-moz-transition: all 300ms;
 	transition: all 300ms;
 	-webkit-transition-delay: 100ms;
 	-moz-transition-delay: 100ms;
 	transition-delay: 100ms;
-	z-index: 100;
+	z-index: 1;
 }
 
 .photo-grid figcaption p {
 	display: table-cell;
 	font-size: 1.5em;
 	position: relative;
-	top: -40px;
-	width: 310px;
+	top: 0px;
+	width: 450px;
 	-webkit-transition: all 500ms ease-out;
 	-moz-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
@@ -318,47 +328,13 @@ footer {
 }
 
 .photo-grid li:hover figcaption p {
-	-moz-transform: translateY(40px);
-	-webkit-transform: translateY(40px);
-	transform: translateY(40px);
+	-moz-transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
 }
 
 .photo-grid li:hover figcaption {
 	opacity: 1;
-}
-
-.project-section-background {
-	height : 80%;
-	margin-top: 80px;
-	position: relative;
-}
-
-.project-section-background img{
-	height : 100%;
-	position: relative;
-}
-
-.display-table {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.home-section-background h1{
-	font-size: 100px;
-}
-
-.nav li a:focus, .nav li a:hover {
-    background: none;
-    color: #fff;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-	display: block;
-}
-
-.navigation-background .navigation-menu .navbar-nav li a:hover {
-    color: #fff;
-	display: block;
 }
 
 .social-icon {
