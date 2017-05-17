@@ -111,6 +111,10 @@ footer {
 	background-repeat: no-repeat;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .home-section {
     height: 85%;
 	width: 100%;
@@ -806,14 +810,14 @@ p.ism-badge a.ism-link:hover {
 }
 
 .project-view {
-	width: 80%;
+	width: 60%;
 	text-align: left;
 	padding: 0;
 	margin:0;
 }
 
-.project-view img{
-	width: 20%;
+.project-view img {
+	width: 100%;
 	margin: 0;
 }
 

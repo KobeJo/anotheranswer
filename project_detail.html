@@ -15,6 +15,33 @@
 		<link rel="stylesheet" type="text/css" href="css/plugin.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+		<script type="text/javascript">
+			function doImgPop(img){ 
+			 img1= new Image(); 
+			 img1.src=(img); 
+			 imgControll(img); 
+			} 
+			  
+			function imgControll(img){ 
+			 if((img1.width!=0)&&(img1.height!=0)){ 
+				viewImage(img); 
+			  } 
+			  else{ 
+				 controller="imgControll('"+img+"')"; 
+				 intervalID=setTimeout(controller,20); 
+			  } 
+			}
+			function viewImage(img){ 
+			 W=img1.width; 
+			 H=img1.height; 
+			 O="width="+W+",height="+H+",scrollbars=yes"; 
+			 imgWin=window.open("","",O); 
+			 imgWin.document.write("<html><head><title>이미지 상세보기</title></head>");
+			 imgWin.document.write("<body topmargin=0 leftmargin=0>");
+			 imgWin.document.write("<img src="+img+" onclick='self.close()' style='cursor:pointer;' title ='클릭하시면 창이 닫힙니다.'>");
+			 imgWin.document.close();
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -57,16 +84,14 @@
 				</div>
 			</div>
 			<div class="home-section-background">
-				<div class="container">				
-					<div class="col-md-8 project-view">
-						<img src="images/color1.jpg" alt="" />
-						<img src="images/color2.jpg" alt="" />
-						<img src="images/color5.jpg" alt="" />
-						<img src="images/color4.jpg" alt="" />
-						<img src="images/color8.jpg" alt="" />
-						<img src="images/color7.jpg" alt="" />
-						<img src="images/color6.jpg" alt="" />
-						<img src="images/color3.jpg" alt="" />
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 project-view" style="padding-left:3em">
+							<img src="images/colorfinish.png" title="클릭하시면 원본 크기로 보실 수 있습니다." style="cursor: pointer;" onclick="doImgPop('images/colorfinish.png')" />
+						</div>
+						<div class="col-md-4 text-center">
+							<h2>Coloring Campus</h2>
+						</div>
 					</div>
 				</div>
 			</div>
